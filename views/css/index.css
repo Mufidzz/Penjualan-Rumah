@@ -141,6 +141,7 @@
 
 
 .page.no2 {
+    height: auto;
     background-color: #F4F4F4 !important;
     display: flex;
     flex-direction: column;
@@ -192,4 +193,5 @@
 
     background-color: #1A1A1A;
     margin-right:1%;
+    box-shadow: 0px 0px 2px 1px;
 }
