@@ -1,10 +1,9 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/global.css"/>
-    <link rel="stylesheet" type="text/css" href="css/sell.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/user.css"/>
 </head>
-
 <body>
     <div class="header-container">
         <div class="left-side-container">
@@ -23,16 +22,24 @@
     </div>
     <div class="content-container">
         <div class="left-side-container">
-            <div class="left-side-option-container">
-
+            <div class="user-card">
+                <img class="profile-pict">
+                <label for="user-username">{username}</label>
+                <a href="#">Edit Profile</a>
             </div>
         </div>
         <div class="right-side-container">
-            <?php
-            for($i = 0; $i<15 ; $i++){
-                echo '<div class="item-card"></div>';
-            }
-            ?>
+            <div class="header">
+                <label>My Listing</label>
+                <button>Add</button>
+            </div>
+            <div class="content">
+                <?php
+                for($i = 0; $i<15 ; $i++){
+                    echo '<div class="item-card"></div>';
+                }
+                ?>
+            </div>
         </div>
     </div>
 </body>
