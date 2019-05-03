@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px)
+{
+    .mobile-nav{
+        display: flex !important;
+        color: #fff;
+        text-decoration: none;
+        width: 50;
+        height: 50;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .sidebar-container
+    {
+        display: none !important;
+    }
+
+    .carousel-conainer
+    {
+        width: 100% !important;
+    }
+
+    .search-bar-container
+    {
+        background-color: #3F9EB6;
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center;
+    }
+
+    .search-bar-container > form
+    {
+        width: 60% !important;
+    }
+    .search-bar-container > form > input
+    {
+        width: 80% !important;
+    }
+
+    .item-card
+    {
+        min-width: 45% !important;
+        max-width: 45% !important;
+    }
+}

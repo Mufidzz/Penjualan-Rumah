@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/global.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/m/index.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -10,10 +11,13 @@
         <div class="page no1">
             <div class="carousel-conainer">
                 <div class="search-bar-container">
+                    <a class="mobile-nav" href="#">Menu</a>
                     <form>
                         <input type="text" placeholder="Search here"/>
                         <button>G</button>
                     </form>
+                    <a class="mobile-nav" href="#">Login</a>
+
                 </div>
 
                 <div class="main-image-container"></div>
