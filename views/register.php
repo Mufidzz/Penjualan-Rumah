@@ -1,17 +1,17 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/global.css"/>
-    <link rel="stylesheet" type="text/css" href="css/register.css"/>
-    <link rel="stylesheet" type="text/css" href="css/m/register.css"/>
-    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
-    <link rel="stylesheet" type="text/css" href="css/m/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/register.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/m/register.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/m/navbar.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="header-container">
         <div class="left-side-container">
-            <button class="btnBack">Back</button>
+            <img class="logo" src="/views/img/Logo-wh.png"/>
         </div>
     </div>
     <div class="content-container">
@@ -23,7 +23,7 @@
             <input type="number" placeholder="whatsapp number">
             <button>Sign in</button>
         </form>
-        <a href="#">already member? sign in</a>
+        <a href="/login">already member? sign in</a>
     </div>
 </body>
 </html>

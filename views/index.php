@@ -1,8 +1,8 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/global.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="css/m/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/views/css/m/index.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -30,14 +30,11 @@
             </div>
             <div class="sidebar-container">
                 <div class="account-utility-container">
-                    <a href="#">Sign up</a>
-                    <a href="#">Login</a>
+                    <img src="/views/img/Logo-wh.png"/>
                 </div>
                 <div class="items-container">
-                    <a href=#>Item 1</a>
-                    <a href=#>Item 2</a>
-                    <a href=#>Item 3</a>
-                    <a href=#>Item 4</a>
+                    <a href="/login">Sign in</a>
+                    <a href="/register">Register</a>
                 </div>
             </div>
         </div>
