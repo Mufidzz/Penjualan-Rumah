@@ -1,39 +1,216 @@
-.content-container {
-    position: relative;
-    top: 80px;
-    min-height: calc(100% - 80px);
-    width: 100%;
+body
+{
     display: flex;
-
+    justify-content: space-around;
     background-color: #fff;
 }
 
+.navigation-bar
+{
+    width: 25vw;
+    height: 100vh;
 
-.content-container > .left-side-container {
-    width: 25%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-bar > .logo
+{
+
+    height: 7.5vw;
+    width: 100%;
+
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.content-container > .left-side-container > .left-side-option-container {
-
-    width: 80%;
-    height: 60%;
-    border: solid 2px #3F9EB6;
-    box-shadow: 0px 0px 5px #ccc;
+.navigation-bar > .logo > img
+{
+    height: 70%;
 }
 
-.content-container > .right-side-container {
-    width: 75%;
+.navigation-bar > .nb-tab-1
+{
+    min-height: 50px;
+    max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.content-container > .right-side-container > .item-card {
-    width: 20%;
-    height: calc(8/10 * 45%);
-    background-color: #000;
-    margin-right: 25px;
-    margin-bottom: 5px;
+.navigation-bar > .nb-tab-1 > a
+{
+    justify-content:flex-start;
+    background-color: #e6e6e6;
+    
+    height: 50px;
+    width: 100%;
+    font-size: 1em;
+    
+    color: #003152;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+.navigation-bar > .nb-tab-1 > .hash-btn
+{
+    background-color: #F2F2F2;
+}
+
+.navigation-bar > .nb-tab-1 > .upload-btn
+{
+    background-color: #003152;
+    color: #fff;
+    font-family: Helvetica-Bold;
+    justify-content: center;
+    padding: 0px !important;
+}
+
+.navigation-bar > .nb-tab-1 > a > i
+{
+    margin: 0px 1vw;
+}
+
+.content
+{
+    width: 75vw;
+    min-height: 100vh;
+    background-color: #EBEBEB;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.content > .header
+{
+    height: 5vw;
+    width: 75vw;
+    background-color: #fff;
+    border-bottom: solid 2px #003152;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content > .header > .right
+{
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    justify-content: flex-end
+}
+
+.content > .header > .right > a
+{
+    background-color: #003152;
+    display: block;
+    width: 10vw;
+    height: 2vw;
+    
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 1vw;
+    font-size: .75em;
+    
+}
+
+.content > .header > .left 
+{
+    width: 50vw;
+    height: 5vw;
+}
+
+.content > .header > .left > form
+{
+    width: 40vw;
+    height: 5vw;
+    margin-left: 1vw;
+    
+    display: flex;
+    align-items: center;
+}
+
+.content > .header > .left > form > input
+{
+    width: 40vw;
+    height: 2vw;
+    padding-left: 1vw;
+    
+    border: solid .5px #ccc;
+}
+
+.content > .header > .left > form > button
+{
+    width: 3vw;
+    height: 2vw;
+    
+    border: solid .5px #ccc;
+    font-size: .75em;
+}
+
+
+.content > .header > .right > button:last-child
+{
+    background-color: #ccc;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 99999px;
+    margin-right: 2vw;
+}
+
+.content > .filter
+{
+    width: 75vw;
+    height: 6vw;
+    border-bottom: solid .75px #003152;
+}
+
+.content > .list
+{
+    width: 75vw;
+    min-height: 50vw;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.content > .list > .item
+{  
+    height: 25vw;
+    width: 32.5vw;
+    
+    background-color: #ccc;
+    margin-top: 1.5vw;
+}
+
+.m-menu
+{
+    display: block;
+    color: #003152;
+    height: 4vw;
+    width: 4vw;
+    margin-right: 55vw;
+    background-color: #fff;
+    font-size: 1em;
+    display: none;
+}
+
+.unhide
+{
+    display: flex !important;
 }

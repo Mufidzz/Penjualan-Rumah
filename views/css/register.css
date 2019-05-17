@@ -1,59 +1,143 @@
-.content-container
+.main-container
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    margin-top: -150;
-    margin-left: -150;
-
-    height: 300px;
+    height: 480px;
     width: 300px;
+    
+    border: solid 2px #003152;
+    
+    top:50%;
+    left: 50%;
+    position: relative;
+    
+    margin-top: -240px;
+    margin-left: -150px;
+}
 
+.main-container > .logo
+{
+    height: 100px;
     display: flex;
-    flex-direction: column;
-}
-
-.content-container > label
-{
-    font-size: 2em;
-    color: #3F9EB6;
-    align-self: center;
-}
-
-.content-container > a
-{
-    font-size: .75em;
-    color: #3F9EB6;
-    align-self: center;
-    text-decoration: none;
-}
-
-.content-container > form
-{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
 }
 
-.content-container > form > input
+.main-container > .logo > img
 {
-    border: solid 2px #3F9EB6;
-    width: 80%;
-    height: 32px;
-    padding-left: 6px;
-    margin-bottom: 10px
+    height: 80px;
 }
 
-.content-container > form > button
+.main-container > form
 {
-    width: 80%;
-    height: 40px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container > form > input
+{
+    width: 280px;
+    height: 36px;
+    border-bottom: solid 2px #003152;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.main-container > form > .kecamatan-kelurahan
+{
+    width: 280px;
+    height: 36px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container > form > .kecamatan-kelurahan > select
+{
+    width: 48%;
+    height: 36px;
+    border-bottom: solid 2px #003152;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.main-container > .navigator
+{
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.main-container > .navigator > label
+{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    font-size: .5em;
+    word-wrap: none;
+    margin: 2.5%;
+    margin-bottom: 5%;
+}
+
+.main-container > .navigator > label > a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-decoration: none;
+    margin-left: .5em;
+    color: #003512;
+}
+
+.main-container > .navigator > a
+{
+    color:#003152;
+    text-decoration: none;
+    
+    font-size: 0.8em;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+.main-container > .navigator > button
+{
+    height: 32px;
+    width: 100px;
+    
     border: none;
-    background-color: #3F9EB6;
+    background-color:#003152;
     color: #fff;
+    
+    cursor: pointer;
+    
+}
+
+body > a 
+{
+    color:#003152;
+    text-decoration: none;
+    
+    font-size: 0.8em; 
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    margin-left: -150px;
+    margin-top: 250px;
+    
+    display: block;
+    width: 300px;
+    height: 40px;
+    
+    text-align: center;
+    
 }

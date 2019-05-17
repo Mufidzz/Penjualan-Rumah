@@ -1,102 +1,100 @@
-.content-container {
-    position: relative;
-    top: 80px;
-    min-height: calc(100% - 80px);
-    width: 100%;
-    display: flex;
-    background-color: #fff;
-}
-
-.content-container > .left-side-container {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-}
-
-.content-container > .left-side-container > .user-card{
-    width: 90%;
-    height: 60%;
+body
+{
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    background-color: #EBEBEB;
+}
+
+.navigation-bar
+{
+    width: 25vw;
+    height: 100vh;
+
+    background-color: #fff;
+    display: flex;
     flex-direction: column;
-
-    border: solid 2px #3F9EB6;
 }
 
-.content-container > .left-side-container > .user-card > .profile-pict{
-    width: 200px;
-    height: 200px;
+.navigation-bar > .logo
+{
+
+    height: 7.5vw;
+    width: 100%;
+
     display: flex;
     justify-content: center;
-    background-color: #ccc;
-    border-radius: 9999px;
-    align-self: center;
-}
-
-.content-container > .left-side-container > .user-card > * {
-    justify-content: center;
-    align-self: center;
-}
-
-.content-container > .left-side-container > .user-card > a {
-    color: #fff;
-    display: flex;
-    background-color: #3F9EB6;
-
-    align-content: center;
-    align-self: center;
     align-items: center;
+}
 
-    width: 40%;
-    height: 30px;
+.navigation-bar > .logo > img
+{
+    height: 70%;
+}
+
+.navigation-bar > .nb-tab-1
+{
+    min-height: 50px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-bar > .nb-tab-1 > a
+{
+    justify-content:flex-start;
+    background-color: #e6e6e6;
+    
+    height: 50px;
+    width: 100%;
+    font-size: 1em;
+    
+    color: #003152;
     text-decoration: none;
-
-}
-
-.content-container > .right-side-container {
-    width: 75%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    align-self: center;
 }
 
-.content-container > .right-side-container > .header {
-    width: 100%;
-    height: 60px;
-    padding-right: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
+.navigation-bar > .nb-tab-1 > .hash-btn
+{
+    background-color: #F2F2F2;
 }
 
-.content-container > .right-side-container > .header > label {
-    font-size: 1.5em
-}
-
-.content-container > .right-side-container > .header > button {
-    display: block;
-    background-color: #3F9EB6;
-    border: none;
-    width: 10%;
-    height: 50%;
+.navigation-bar > .nb-tab-1 > .upload-btn
+{
+    background-color: #003152;
     color: #fff;
+    font-family: Helvetica-Bold;
+    justify-content: center;
+    padding: 0px !important;
 }
 
-.content-container > .right-side-container > .content{
-    margin-top: 2.5%;
-    width: 100%;
+.navigation-bar > .nb-tab-1 > a > i
+{
+    margin: 0px 1vw;
+}
+
+.content
+{
+    width: 75vw;
+    min-height: 80vh;
+    background-color: #EBEBEB;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
 }
 
-.content-container > .right-side-container > .content > .item-card{
+.utility-bar
+{
+    display: none;
+}
 
-    width: 20%;
-    height: calc(8/10 * 45%);
-    background-color: #000;
-    margin-right: 25px;
-    margin-bottom: 5px;
+.unhide
+{
+    display: block !important;
 }

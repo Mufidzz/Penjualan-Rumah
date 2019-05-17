@@ -67,13 +67,10 @@ switch ($request_method){
         if($jwt) {
             try {
                 $decoded = JWT::decode($jwt, $key, array('HS256'));
-
-                if (isset($data->username)) {
-                    $user->username = $data->username;
-                }
-
-                $user->password = $data->password;
-                $user->whatsapp = $data->whatsapp;
+                
+                $user->username = (isset($data->username) ? $data->username : $decoded->data->username);
+                $user->password = (isset($data->password) ? $data->password : $decoded->data->password);
+                $user->whatsapp = (isset($data->whatsapp) ? $data->whatsapp : $decoded->data->whatsapp);
 
                 if ($user->update()) {
                     $token = array(
@@ -93,7 +90,7 @@ switch ($request_method){
 
                     echo json_encode(array(
                         "message" => "User was updated",
-                        "jwt" => $jwt
+                        "jwt" => $jwt,
                     ));
                 } else {
                     http_response_code(401);
@@ -102,13 +99,13 @@ switch ($request_method){
             } catch (Exception $e){
                 http_response_code(401);
                 echo json_decode(array(
-                    "message" => "Access Denied.",
+                    "message" => "Access Denied .",
                     "error" => $e->getMessage()
                 ));
             }
         }else {
             http_response_code(401);
-            echo json_encode(array("message" => "Access denied."));
+            echo json_encode(array("message" => "Access denied : Unknown."));
         }
         break;
     case "DELETE":

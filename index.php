@@ -1,4 +1,3 @@
 <?php
-
-//require 'controllers/router.php';
+require 'controllers/router.php';
 ?>

@@ -1,47 +1,292 @@
-@media only screen and (max-width: 600px)
+@media all and (max-width: 800px) {
+    body
+    {
+
+        background-color: #EBEBEB;
+    }
+
+    .navigation-bar
+    {
+        top: 0;
+        left: 0;
+        width: 45vw;
+        height: 100%;
+
+        position: absolute;
+        z-index: 999999;
+        display: none;
+    }
+
+.content
 {
-    .mobile-nav{
-        display: flex !important;
-        color: #fff;
-        text-decoration: none;
-        width: 50;
-        height: 50;
+    width: 100vw;
+}
 
-        align-items: center;
-        justify-content: center;
+.content > .carousel
+{
+    margin-top: 10vw;
+    width: 100vw;
+    height: 40vw;
+    margin-bottom: 5vw;
+}
+
+.content > .utility-bar
+{
+    width: 95vw;
+    height: 10vw;
+    background-color: #003152;
+    padding: 0 2.5vw;
+}
+
+.content > .utility-bar > .left-bar
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content > .utility-bar > .left-bar > .carousel-navigation
+{
+    width: 8vw;
+    height: 5vw;
+}
+
+.content > .utility-bar > .left-bar > .carousel-navigation > button
+{
+    display: none;
+}
+
+.content > .utility-bar > .left-bar > .search-bar-container
+{
+    width: 40vw;
+    height: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+.content > .utility-bar > .left-bar > .search-bar-container > form
+{
+    width: 100%;
+}
+
+.content > .utility-bar > .left-bar > .search-bar-container > form > input
+{
+    width: 100%;
+    height: 4vw;
+    padding-left: 1vw
+}
+
+.content > .utility-bar > .right-bar
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content > .utility-bar > .right-bar > .user-utility
+{
+    width: 25vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.content > .utility-bar > .right-bar > .user-utility > button
+{
+    width: 5vw;
+    height: 5vw;
+    margin-right: 1vw;
+
+    border-radius: 999px;
+
+    background-color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+.content > .utility-bar > .right-bar > .user-utility > a
+{
+    font-size: .75em;
+    padding: .75vw 2vw;
+    
+}
+
+.content > .location-bar
+{
+    align-self: center;
+    width: 95vw;
+    height: 20vw !important;
+    margin-bottom: 5vw;
+    margin-left: 0 !important;
+}
+    
+.content > .location-bar > .title-bar > label
+{
+    font-size: 1em;
+}
+
+.content > .location-bar > .item-bar
+{
+    height: 17.5vw;
+    margin-top: 1vw
+}
+
+.content > .location-bar > .item-bar > .item
+{
+    background-color: #000;
+    width: 17.5vw;
+    height: 17.5vw;
+
+    overflow-x: auto;
+    transition: .1s;
+}
+    
+.content > .price-bar
+{
+    width: 95vw;
+    align-self: center;
+    margin-left: 0;
+    margin-bottom: 5vw;
 
     }
 
-    .sidebar-container
-    {
-        display: none !important;
+    .content > .price-bar > .title-bar{
+        height: 5vw;
     }
+.content > .price-bar > .title-bar > label
+{
+    font-size: 1em;
 
-    .carousel-conainer
-    {
-        width: 100% !important;
-    }
+}
 
-    .search-bar-container
-    {
-        background-color: #3F9EB6;
-        display: flex !important;
-        justify-content: space-around !important;
-        align-items: center;
-    }
+.content > .price-bar > .item-bar > .item
+{
+    background-color: #000;
+    height: 4vw;
+    width: 23vw;
+    margin-bottom: 1vw;
+    flex-wrap: wrap;
 
-    .search-bar-container > form
-    {
-        width: 60% !important;
-    }
-    .search-bar-container > form > input
-    {
-        width: 80% !important;
-    }
+    transition: .1s;
+    font-size: .5em;
+}
+.content > .hot-list-bar
+{
+    width: 95vw;
+    height: 25vw;
+    margin-bottom: 5vw;
+    align-self: center;
+}
 
-    .item-card
-    {
-        min-width: 45% !important;
-        max-width: 45% !important;
-    }
+.content > .hot-list-bar > .title-bar
+{
+    height: 3vw;
+    margin-bottom: 1vw;
+}
+
+.content > .hot-list-bar > .title-bar > label
+{
+    font-family: Helvetica-Bold;
+    font-size: 1em;
+}
+
+.content > .hot-list-bar > .item-bar
+{
+    width: 100%;
+    height: 22.5vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+.content > .hot-list-bar > .item-bar > .item
+{
+    background-color: #000;
+    height: 22.5vw;
+    width: 27.5vw;
+    margin-right: 1vw;
+    transition: .1s;
+    flex-shrink: 0;
+}
+
+
+.content > .keyword-bar
+{
+    width: 95vw;
+    margin-left: 1vw;
+    min-height: 5vw;
+    margin-bottom: 1vw;
+    align-self: center;
+}
+
+
+.content > .keyword-bar > .title-bar
+{
+    width: 95;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.content > .keyword-bar > .title-bar > label
+{
+    font-family: Helvetica-Bold;
+    font-size: 1em;
+
+}
+
+
+.content > .keyword-bar > .item-bar
+{
+    width: 95vw;
+    min-height: 2.5vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+    
+
+.content > .keyword-bar > .item-bar > a
+{
+    color: #fff;
+    background-color: #003152;
+    font-family: Helvetica-Bold;
+    text-decoration: none;
+    padding: .5vw 1.5vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.m-menu
+{
+    display: block !important;
+}
+    
+    
+    .content > .location-bar > .item-bar > .item > label
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 16vw;
+    font-size: .5em;
+}
+    
 }
